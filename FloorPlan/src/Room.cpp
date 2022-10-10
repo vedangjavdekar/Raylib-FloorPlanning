@@ -142,19 +142,19 @@ void Room::OnDropped(Draggable* draggable, bool& dropped)
 
 		if (m_SelectedBox == m_RightBox)
 		{
-			int x1 = m_Bounds.x + m_Bounds.width;
-			int y1 = m_Bounds.y;
-			int x2 = x1;
-			int y2 = y1 + std::max(m_Bounds.height,bounds.height);
+			float x1 = m_Bounds.x + m_Bounds.width;
+			float y1 = m_Bounds.y;
+			float x2 = x1;
+			float y2 = y1 + std::max(m_Bounds.height,bounds.height);
 			cutLine->SetBounds({(float)x1,(float)y1,(float)x2,(float)y2});
 			FloorPlan::GetInstance().AddNodeToRight(m_RoomNode, roomNode,cutLine);
 		}
 		else if (m_SelectedBox == m_BottomBox)
 		{
-			int x1 = m_Bounds.x;
-			int y1 = m_Bounds.y + m_Bounds.height;
-			int x2 = x1 + std::max(m_Bounds.width,bounds.width);
-			int y2 = y1;
+			float x1 = m_Bounds.x;
+			float y1 = m_Bounds.y + m_Bounds.height;
+			float x2 = x1 + std::max(m_Bounds.width,bounds.width);
+			float y2 = y1;
 			cutLine->SetBounds({(float)x1,(float)y1,(float)x2,(float)y2});
 			FloorPlan::GetInstance().AddNodeToBottom(m_RoomNode, roomNode,cutLine);
 		}
