@@ -155,9 +155,9 @@ void DragAndDropManager::UnregisterDropTarget(DropTarget* dropTarget)
         m_CurrHoveredID = 0;
     }
 
-	if (m_Draggables.find(id) != m_Draggables.end())
+	if (m_DropTargets.find(id) != m_DropTargets.end())
 	{
-		m_Draggables.erase(id);
+		m_DropTargets.erase(id);
 		m_IDs.push(id);
 	}
 }

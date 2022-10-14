@@ -62,7 +62,7 @@ int main()
 
 		DrawText("1. Draw here\nLeft Click: Draw\nRightClick: Clear", 20, 300, 20, GRAY);
 		DrawText("2. Drop here\nRightClick: Clear", 300, 550, 20, GRAY);
-		DrawText("Press SPACE to compact the room.", 300, 650, 20, GRAY);
+		DrawText("Press SPACE to compact the room.", 300, 650, 20, RED);
 		GameManager::GetInstance().Draw();
 		drawer.Draw(850, 20);
 		EndDrawing();

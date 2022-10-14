@@ -18,5 +18,5 @@ void CutLine::SetTempColor(Color color)
 
 void CutLine::RemoveTempColor()
 {
-	m_Color = RED;
+	m_Color = NORMAL_COLOR;
 }

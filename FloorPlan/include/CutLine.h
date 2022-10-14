@@ -12,6 +12,7 @@ public:
 	void SetTempColor(Color color);
 	void RemoveTempColor();
 private:
-	Color m_Color = RED;
+	const Color NORMAL_COLOR = YELLOW;
+	Color m_Color = NORMAL_COLOR;
 	CutNode* m_CutNode = nullptr;
 };
